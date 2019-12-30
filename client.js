@@ -1,4 +1,12 @@
-const SERVER_NAME = "http://192.168.100.16:3000";
+
+// server's ip
+
+const IP_OR_DOMEN = "192.168.100.16";
+
+
+
+
+const SERVER_NAME = `http://${IP_OR_DOMEN}:3000`;
 
 const Colors = ["rgb(0,255,0)"];
 const Delay = 20;
