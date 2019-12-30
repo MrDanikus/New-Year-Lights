@@ -1,0 +1,25 @@
+{
+  "name": "new-year-lights",
+  "version": "1.0.0",
+  "description": "##How does it work?",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.1.0",
+    "socket.io": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrDanikus/New-Year-Lights.git"
+  },
+  "author": "MrDanikus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrDanikus/New-Year-Lights/issues"
+  },
+  "homepage": "https://github.com/MrDanikus/New-Year-Lights#readme"
+}

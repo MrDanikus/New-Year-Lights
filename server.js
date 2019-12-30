@@ -3,7 +3,7 @@ require('dotenv').config();
 
 var fs              = require('fs');
 var express         = require('express');
-var cors            = require('cors');
+
 var app             = express();
 var server          = require('http').Server(app);
 var io              = require('socket.io')(server);
