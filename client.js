@@ -1,16 +1,16 @@
 
 // server's ip
 
-const IP_OR_DOMEN = "192.168.100.16";
 
 
 
 
-const SERVER_NAME = `http://${IP_OR_DOMEN}:3000`;
 
-const Colors = ["rgb(0,255,0)"];
+const SERVER_NAME = `http://${IP}`;
+
+
 const Delay = 20;
-
+var sum = 255+255+255 + 1;
 
 var elem = document.getElementById("col"); 
 
@@ -29,10 +29,9 @@ function openFullscreen() {
 
 
 
-var sum = 255+255+255 + 1;
+
 
 var ClientServerOffset = 0.0;
-var ServerTime = 0.0;
 var offsets = [];
 const offs_size = 100;
 
@@ -42,6 +41,7 @@ const socket = io(SERVER_NAME);
 
 function setColor(color){
 	elem.style.backgroundColor = color;
+	document.body.style.backgroundColor = color;
 }
 
 function syncClocks(){
@@ -59,7 +59,7 @@ function syncClocks(){
 		});
 
 		ClientServerOffset = offsetsSum/offsets.length;
-		ServerTime = performance.now() + ClientServerOffset;
+		
 
 		if(!flag && offsets.length == offs_size){
 			flag = true;
