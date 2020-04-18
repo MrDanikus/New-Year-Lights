@@ -1,5 +1,7 @@
 # New Year Lights
 
+This application synchronizes devices connected to one server and launches a colorful garland on them.
+
 ## How does it work?
 
 Just copy all files to your directory and type `npm install` in command line
